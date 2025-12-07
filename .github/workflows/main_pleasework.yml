@@ -47,9 +47,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_48649A9A4187493D80DECD5A5F09D5D4 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_60B17C5DD35E4209A594618743FDE496 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D7043622283343CBB9578F57243C64F6 }}
+          client-id: ${{ secrets.AZURE_CLIENT_ID  }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: "839d5a34-2417-4912-8c35-8f89a1b0cb4"
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -58,4 +58,5 @@ jobs:
           app-name: 'pleasework'
           slot-name: 'Production'
           package: .
+
           

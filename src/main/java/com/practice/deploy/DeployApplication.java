@@ -19,3 +19,27 @@ public class DeployApplication {
 	}
 
 }
+
+
+
+/*
+ secrets generation - purpose
+ * az ad sp create-for-rbac \
+  --name "github-actions-sp" \
+  --role contributor \
+  --scopes /subscriptions/839d5a34-2417-4912-8c35-8f89a1b0cb46/resourceGroups/deploy-rg \
+  --sdk-auth*/
+
+
+/* 
+ git imp commands
+ 
+ 
+C:\Users\santu\Documents\springboot practice\deploy\deploy>git remote remove origin
+
+C:\Users\santu\Documents\springboot practice\deploy\deploy>git remote add origin https://github.com/santkumrap-ui/crud
+
+C:\Users\santu\Documents\springboot practice\deploy\deploy>*/
+
+
+
